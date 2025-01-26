@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import avatar from '../../../../images/image-avatar.png'
+import avatar from '../../../public/images/image-avatar.png'
 import { useCart } from '../../context/Cart'
 import { ShowCart } from '../ShowCart';
 import { useMenu } from '../../context/Menu';
-import { Hamburger } from '../Hamburger';
+
 export const Navbar=()=>{
     const {cart}=useCart();
     const {cartDisplay, setCartDisplay}=useCart();
@@ -20,7 +19,6 @@ export const Navbar=()=>{
             <button className='ml-8 mt-1 md:ml-4 md:invisible' onClick={onMenuClick}>
                 <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
             </button>
-            {/* <Hamburger /> */}
             <span className="mr-4 md:mr-0 p-8 text-4xl md:pl-12 font-kumbhSans font-bold md:text-3xl">sneakers</span>
             <ul className="hidden md:flex md:flex-grow md:text-gray-400 md:pt-10 md:visible">
                 <li className="px-4 hover:border-b-4 hover:border-orange">Collections</li>

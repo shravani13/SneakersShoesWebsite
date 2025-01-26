@@ -1,4 +1,3 @@
-import imageProudct1 from "../../../../images/image-product-1.jpg" 
 import { Carousel } from "../Carousel"
 import { useCart } from "../../context/Cart"
 import { products } from "../../db"
