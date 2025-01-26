@@ -1,4 +1,4 @@
-import { useCart } from "../context/Cart"
+import { useCart } from "../../context/Cart"
 import * as math from 'mathjs'
 export const ShowCart=()=>{
     const {cart, dispatchCart, cartDisplay,setGotocart}=useCart();

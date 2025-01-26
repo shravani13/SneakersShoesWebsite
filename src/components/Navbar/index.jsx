@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import avatar from '../../../../images/image-avatar.png'
 import { useCart } from '../../context/Cart'
-import { ShowCart } from '../../ShowCart';
+import { ShowCart } from '../ShowCart';
 import { useMenu } from '../../context/Menu';
 import { Hamburger } from '../Hamburger';
 export const Navbar=()=>{
